@@ -1,0 +1,2 @@
+Namn;Personnummer;Incheckad;
+Fredrik Berggren;851020-6728;2025-10-23
