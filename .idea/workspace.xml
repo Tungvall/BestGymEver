@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1f7d08-e938-4178-9e3a-28eda89c14b5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_members.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pt_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pt_log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/validateFileInputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/validateFileInputTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,48 +49,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.CsvHeaderFormatTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.csvVerifyColumnTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.getMembersTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.validateActiveMemberTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.validateDateTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.validateEmailTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.validateMemberTypeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.validateNameTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateDataTest.validateSocialSecurityNumberTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateFileImport.ValidateCsvFormatTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateFileImportTest.CsvFormatTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateFileInputTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateFileInputTest.validateNameTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ValidateInputTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ValidateInputTest.validateEmailTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mituv/IdeaProjects/BestGymEver/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mituv/IdeaProjects/BestGymEver/src/Main.java&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ValidateDataTest.CsvHeaderFormatTest.executor": "Run",
+    "JUnit.ValidateDataTest.csvVerifyColumnTest.executor": "Run",
+    "JUnit.ValidateDataTest.executor": "Run",
+    "JUnit.ValidateDataTest.getMembersTest.executor": "Run",
+    "JUnit.ValidateDataTest.logUserTest.executor": "Run",
+    "JUnit.ValidateDataTest.validateActiveMemberTest.executor": "Run",
+    "JUnit.ValidateDataTest.validateDateTest.executor": "Run",
+    "JUnit.ValidateDataTest.validateEmailTest.executor": "Run",
+    "JUnit.ValidateDataTest.validateMemberTypeTest.executor": "Run",
+    "JUnit.ValidateDataTest.validateNameTest.executor": "Run",
+    "JUnit.ValidateDataTest.validateSocialSecurityNumberTest.executor": "Run",
+    "JUnit.ValidateFileImport.ValidateCsvFormatTest.executor": "Run",
+    "JUnit.ValidateFileImportTest.CsvFormatTest.executor": "Run",
+    "JUnit.ValidateFileInputTest.executor": "Run",
+    "JUnit.ValidateFileInputTest.validateNameTest.executor": "Run",
+    "JUnit.ValidateInputTest.executor": "Debug",
+    "JUnit.ValidateInputTest.validateEmailTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/mituv/IdeaProjects/BestGymEver/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/mituv/IdeaProjects/BestGymEver/src/Main.java",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mituv\IdeaProjects\BestGymEver\src" />
@@ -110,14 +107,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ValidateDataTest.getMembersTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="BestGymEver" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ValidateDataTest.logUserTest">
     <configuration name="ValidateDataTest.CsvHeaderFormatTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestGymEver" />
       <option name="PACKAGE_NAME" value="" />
@@ -148,6 +138,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ValidateDataTest.logUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BestGymEver" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ValidateDataTest" />
+      <option name="METHOD_NAME" value="logUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ValidateDataTest.validateActiveMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BestGymEver" />
       <option name="PACKAGE_NAME" value="" />
@@ -160,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ValidateDataTest.logUserTest" />
         <item itemvalue="JUnit.ValidateDataTest.getMembersTest" />
         <item itemvalue="JUnit.ValidateDataTest.validateActiveMemberTest" />
         <item itemvalue="JUnit.ValidateDataTest.csvVerifyColumnTest" />
         <item itemvalue="JUnit.ValidateDataTest.CsvHeaderFormatTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +197,7 @@
       <workItem from="1761922654599" duration="595000" />
       <workItem from="1761926683053" duration="257000" />
       <workItem from="1761927028943" duration="2423000" />
-      <workItem from="1762152876671" duration="1787000" />
+      <workItem from="1762152876671" duration="10599000" />
     </task>
     <servers />
   </component>

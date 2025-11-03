@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -9,9 +10,12 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ValidateDataTest {
-    String filePath = "test_members.txt";
+    String readPath = "test_members.txt";
+    String writePath = "test_fileWrite.txt";
     ValidateData x = new ValidateData();
-    ReadFile r = new ReadFile(x, filePath);
+    ReadFile r = new ReadFile(x, readPath);
+    WriteFile w = new WriteFile(x, writePath);
+    Person p = new Person("Fredrik", "Berggren", "Skolgränd 8, 16819 Norrköping", "fredde@fakemail.se", "851020-6728", "2019-12-30", "2021-12-30", "Platina");
 
     @Test
     void validateNameTest() {
@@ -110,16 +114,40 @@ class ValidateDataTest {
 
     @Test
     void getMembersTest() {
-        Person p = new Person("Fredrik", "Berggren", "Skolgränd 8, 16819 Norrköping", "fredde@fakemail.se", "851020-6728", "2019-12-30", "2021-12-30", "Platina");
+
         List<Person> plist = r.getMembers();
-        System.out.println(plist);
         String actual = plist.getFirst().toString();
         String expected = p.toString();
         assertEquals(expected, actual);
-        assertNotEquals(null, actual);
-        assertNotEquals(expected, "Fredrik Berggren;Skolgränd 8, 16819 Norrköping;fredde@fakemail.se;851020-6728;2019-12-30;2021-12-30;Platin");
+        assertNotEquals(expected, "Fredrik Berggren;Skolgränd 8, 16819 Norrköping;fredde@fakemail.se;851020-6728;2019-12-30;2021-12-30;Platina");
+        System.out.println(p.toString());
+    }
+
+    @Test
+    void logUserTest() {
+        List<Person> plist = r.getMembers();
+        w.logUser(plist.get(0));
+        Path filePath = Path.of("test_fileWrite.txt");
+        String line1;
+        String line2;
+        String date = LocalDate.now().toString();
+        String expected = "Fredrik Berggren;851020-6728;" + date;
+        try (BufferedReader br = Files.newBufferedReader(filePath)) {
+            line1 = br.readLine();
+            line2 = br.readLine();
+            assertTrue(Files.exists(filePath), "File should exist");
+            assertTrue(line1.equals("Namn;Personnummer;Incheckad;"), "Incorrect on line 1");
+            assertEquals(expected, line2, "Incorrect on line 2");
+            System.out.println(line2);
+            System.out.println(expected);
+            Files.delete(filePath);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
 
     }
+
 
     @Test
     void csvVerifyRead() {
