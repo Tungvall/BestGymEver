@@ -21,7 +21,6 @@ public class ReadFile {
 
     public List<Person> getMembers() {
 
-
         List<Person> members = new ArrayList<>();
         try (BufferedReader br = Files.newBufferedReader(this.textFile)) {
 
@@ -43,9 +42,9 @@ public class ReadFile {
                 String address = fields[1];
                 String email = fields[2];
                 String socialSecurity = fields[3];
-                LocalDate memberShipStartDate = LocalDate.parse(fields[4]);
-                LocalDate membershipRenewDate = LocalDate.parse(fields[5]);
-                String membershipType = (fields[6]);
+                String memberShipStartDate = fields[4];
+                String membershipRenewDate = fields[5];
+                String membershipType = fields[6];
 
                 firstName = validate.validateName(firstName);
                 lastName = validate.validateName(lastName);

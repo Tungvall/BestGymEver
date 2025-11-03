@@ -10,14 +10,14 @@ public class Person {
     private final LocalDate membershipRenewDate;
     private final String membershipType;
 
-    public Person(String firstName, String lastName,String address, String email, String socialSecNumber, LocalDate membershipStartDate, LocalDate membershipRenewDate, String membershipType) {
+    public Person(String firstName, String lastName,String address, String email, String socialSecNumber, String membershipStartDate, String membershipRenewDate, String membershipType) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address =address;
         this.email = email;
         this.socialSecNumber = socialSecNumber;
-        this.membershipStartDate = membershipStartDate;
-        this.membershipRenewDate = membershipRenewDate;
+        this.membershipStartDate = LocalDate.parse(membershipStartDate);
+        this.membershipRenewDate = LocalDate.parse(membershipRenewDate);
         this.membershipType = membershipType;
     }
 
@@ -52,6 +52,20 @@ public class Person {
 
     public String getMembershipType() {
         return membershipType;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", email='" + email + '\'' +
+                ", socialSecNumber='" + socialSecNumber + '\'' +
+                ", membershipStartDate=" + membershipStartDate +
+                ", membershipRenewDate=" + membershipRenewDate +
+                ", membershipType='" + membershipType + '\'' +
+                '}';
     }
 }
 
